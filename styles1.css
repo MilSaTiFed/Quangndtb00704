@@ -1,0 +1,513 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #663399;
+}
+
+.form-map-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 40%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #663399;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #663399;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #552b88;
+}
+
+.map-container {
+    flex: 2;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.enrollment {
+    padding: 20px;
+}
+
+.enrollment h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.enrollment-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.enrollment .item {
+    flex: 1 1 calc(33.333% - 20px);
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.enrollment .item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.enrollment .item h3 {
+    color: #663399;
+    margin-bottom: 10px;
+}
+
+.enrollment .item p,
+.enrollment .item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.enrollment .item a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+}
+
+.school-name {
+    max-width: 25%; /* Đảm bảo ảnh không vượt quá chiều rộng của phần tử chứa */
+    height: auto; /* Giữ tỷ lệ của ảnh khi thay đổi kích thước */
+    display: block; /* Loại bỏ khoảng trống dưới ảnh nếu là inline-block */
+    margin: 1 auto; /* Căn giữa ảnh trong phần tử chứa */
+    border: none; /* Xóa bỏ viền mặc định nếu có */
+    border-radius: 10px; /* Bo góc ảnh nếu cần, bạn có thể điều chỉnh giá trị này */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng cho ảnh nếu cần */
+    padding: 10px; /* Thêm khoảng cách bên trong ảnh nếu cần */
+    background-color: #f9f9f9; /* Màu nền xung quanh ảnh nếu cần */
+}
+
+
+.contact-info {
+    font-size: 14px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-info i {
+    margin-right: 5px;
+    color: #333;
+}
+
+.contact-info span {
+    display: block;
+}
+
+.phone-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.email-info {
+    text-align: right;
+}
+
+nav {
+    background-color: #6b3fa0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #8e5dbf;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dots {
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.enrollment, .magazine, .recruitment {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.enrollment h2, .magazine h2, .recruitment h2 {
+    text-align: center;
+}
+
+.enrollment-items, .magazine-items, .recruitment-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 30%;
+}
+
+footer {
+    background-color: #6b3fa0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.search-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#center-search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#center-search-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+}
+
+#center-search-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #6b3fa0;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    transition: background-color 0.3s;
+}
+
+#center-search-form button:hover {
+    background-color: #8e5dbf;
+}
+
+#center-search-form button i {
+    font-size: 20px;
+}
+
+#search-history {
+    margin-top: 20px;
+}
+
+#search-history h3 {
+    margin-bottom: 10px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history-list li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.right-column {
+    flex: 1;
+}
+
+.left-column h2 {
+    margin-top: 0;
+}
+
+.enrollment-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enrollment-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.enrollment-item h3 {
+    margin: 10px 0;
+    color: #663399;
+    text-align: center;
+}
+
+.enrollment-item p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.widget {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.widget h3 {
+    margin-top: 0;
+    color: #663399;
+}
+\\
+.enrollment-item2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.item-content2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.tuyensinh-image {
+    max-width: 200px; /* Bạn có thể tùy chỉnh kích thước ảnh tại đây */
+    margin-right: 20px; /* Khoảng cách giữa ảnh và phần chi tiết */
+    object-fit: cover; /* Cắt ảnh cho vừa khít */
+    border-radius: 5px; /* Bo góc ảnh nếu cần */
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h2 {
+    color: #663399;
+    margin: 0;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
+
+.item-details span {
+    color: #666;
+}

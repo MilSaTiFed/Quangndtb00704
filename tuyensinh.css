@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.enrollment-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.item-content2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.enrollment2-image {
+    max-width: 20px; /* Bạn có thể tùy chỉnh kích thước ảnh tại đây */
+    margin-right: 10px; /* Khoảng cách giữa ảnh và phần chi tiết */
+    object-fit: cover; /* Cắt ảnh cho vừa khít */
+    border-radius: 5px; /* Bo góc ảnh nếu cần */
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h2 {
+    color: #663399;
+    margin: 0;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
+
+.item-details span {
+    color: #666;
+}
